@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #0061ff;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  background-color: #e6f0ff;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-img {
+  width: 45%;
+  height: 300px;
+  background-color: #cce0ff;
+}
+
+/* Pricing */
+.pricing {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.pricing-toggle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Enterprise */
+.enterprise-banner {
+  padding: 2rem;
+  background-color: #e0e0e0;
+  text-align: center;
+}
+
+/* Partner */
+.partner-section {
+  display: flex;
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+  gap: 2rem;
+}
+
+.partner-img {
+  flex: 1;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.partner-text {
+  flex: 1;
+}
+
+/* Features */
+.features {
+  padding: 4rem 2rem;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.feature-box {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 6px;
+  min-height: 150px;
+}
+
+/* Social Proof */
+.social-proof {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
