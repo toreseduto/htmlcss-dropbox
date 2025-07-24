@@ -1,81 +1,155 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dropbox Business</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropbox</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Header -->
   <header>
-    <div class="logo">
+    <div class="header-left">
       <img src="logo-small.png" alt="Dropbox Logo">
+      <nav>
+        <ul>
+          <li><a href="#">Perché Dropbox</a></li>
+          <li><a href="#">Funzioni</a></li>
+          <li><a href="#">Piani e Prezzi</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li>Perché Dropbox</li>
-        <li>Funzioni</li>
-        <li>Piani e Prezzi</li>
-      </ul>
-    </nav>
-    <div class="auth-buttons">
-      <button class="btn">Accedi</button>
+    <div class="header-right">
+      <a href="#" class="link">Contatta l'ufficio vendite</a>
+      <a href="#" class="link">Accedi</a>
       <button class="btn btn-primary">Inizia</button>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <div class="hero-text">
       <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.</p>
       <button class="btn btn-primary">Inizia la tua prova gratuita</button>
+      <p class="hero-sub">Annulla in qualsiasi momento</p>
     </div>
     <div class="hero-img">
-      <img src="jumbo.png" alt="Hero Illustration">
+      <img src="jumbo.png" alt="Dashboard Illustration">
     </div>
   </section>
 
-  <!-- Partner Section -->
-  <section class="partner-section">
+  <!-- Pricing Plans -->
+  <section class="pricing">
+    <h2>Trova il piano business che fa per te</h2>
+    <div class="billing-toggle">
+      <label><input type="radio" name="billing" checked> Fatturazione mensile</label>
+      <label><input type="radio" name="billing"> Fatturazione annuale</label>
+    </div>
+    <div class="pricing-cards">
+      <div class="card">
+        <h3>Professional</h3>
+        <p class="price">€12.00</p>
+        <p class="desc">1 utente, 3 TB di spazio</p>
+        <button class="btn btn-primary">Prova gratis per 30 giorni</button>
+      </div>
+      <div class="card">
+        <h3>Advanced</h3>
+        <p class="price">€18.00</p>
+        <p class="desc">Tutto lo spazio di cui il team ha bisogno</p>
+        <button class="btn btn-primary">Prova gratis per 30 giorni</button>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <p class="price">Contattaci</p>
+        <p class="desc">Soluzioni personalizzate per il tuo business</p>
+        <button class="btn btn-primary">Contattaci</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enterprise Banner -->
+  <section class="enterprise-banner">
+    <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su scala aziendale.</p>
+    <button class="btn btn-primary">Contatta l'ufficio vendite</button>
+  </section>
+
+  <!-- Partner -->
+  <section class="partner">
     <div class="partner-img">
       <img src="partner.png" alt="Partner Dropbox">
     </div>
     <div class="partner-text">
       <h2>Entra in contatto con un partner Dropbox</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Trova un partner Dropbox e HelloSign</p>
       <button class="btn">Trova un partner</button>
     </div>
   </section>
 
-  <!-- Features Section -->
+  <!-- Feature Highlights -->
   <section class="features">
     <h2>Esegui più operazioni con Dropbox Business</h2>
-    <div class="feature-grid">
-      <div class="feature-box">
-        <img src="business-feature-coordinate-it.png" alt="Coordinate feature">
-      </div>
-      <div class="feature-box">
-        <img src="business-feature-integrations-it.png" alt="Integrations feature">
-      </div>
-      <div class="feature-box">
-        <img src="business-feature-multi-device.png" alt="Multi-device feature">
-      </div>
-      <div class="feature-box">
-        <img src="business-feature-security.png" alt="Security feature">
-      </div>
-      <div class="feature-box">
-        <img src="business-feature-send-files-it.png" alt="Send files feature">
-      </div>
-      <div class="feature-box">
-        <img src="business-feature-switching-tools.png" alt="Switching tools feature">
-      </div>
+    <div class="features-grid">
+      <img src="business-feature-switching-tools.png" alt="Feature 1">
+      <img src="business-feature-integrations-it.png" alt="Feature 2">
+      <img src="business-feature-coordinate-it.png" alt="Feature 3">
+      <img src="business-feature-multi-device.png" alt="Feature 4">
+      <img src="business-feature-security.png" alt="Feature 5">
+      <img src="business-feature-send-files-it.png" alt="Feature 6">
     </div>
   </section>
 
+  <!-- Social Proof -->
+  <section class="social-proof">
+    <h3>Più di 500.000 team utilizzano Dropbox Business</h3>
+    <a href="#">Scopri di più sui nostri clienti</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-column">
+      <h4>Dropbox</h4>
+      <ul>
+        <li>Applicazione desktop</li>
+        <li>Perché Dropbox</li>
+        <li>Piani</li>
+        <li>Sicurezza</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Prodotti</h4>
+      <ul>
+        <li>Backup</li>
+        <li>Sign</li>
+        <li>DocSend</li>
+        <li>Replay</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Azienda</h4>
+      <ul>
+        <li>Chi siamo</li>
+        <li>Lavora con noi</li>
+        <li>Newsroom</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Supporto</h4>
+      <ul>
+        <li>Centro assistenza</li>
+        <li>Contatta l'assistenza</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Community</h4>
+      <ul>
+        <li>Blog</li>
+        <li>Forum</li>
+        <li>Eventi</li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
