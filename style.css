@@ -19,6 +19,9 @@ header {
   align-items: center;
   padding: 1.2rem 2rem;
   background-color: #f9f9f9;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .header-left {
@@ -117,20 +120,48 @@ nav a {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .card {
-  flex: 1;
+  flex: 1 1 30%;
   background-color: #f5f5f5;
   padding: 1.5rem;
   border-radius: 8px;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.price {
+.card h3 {
+  font-size: 1.3rem;
+}
+
+.card .price {
   font-size: 1.5rem;
   color: #0061ff;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 6px;
   margin: 1rem 0;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.card ul li::before {
+  content: "\2713";
+  color: #0061ff;
+  margin-right: 0.5rem;
+}
+
+.card .btn {
+  align-self: start;
 }
 
 /* Enterprise Banner */
@@ -180,6 +211,14 @@ nav a {
   border-radius: 8px;
 }
 
+.feature-item h3 {
+  font-size: 1.1rem;
+  margin: 0.8rem 0 0.4rem;
+  color: #222;
+  font-weight: 600;
+}
+
+
 /* Social Proof */
 .social-proof {
   text-align: center;
@@ -214,4 +253,4 @@ footer {
 .footer-column ul li {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
-} 
+}
